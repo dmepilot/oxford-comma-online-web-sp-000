@@ -5,6 +5,6 @@ def oxford_comma(array)
     array.join(" and ")
   elsif array.size > 2
   string=array.join(", ")
-  string.insert(/.*\K,\s/, "and ")
+  string.sub(/.*\K,\s/, "and ")
 end
 end
